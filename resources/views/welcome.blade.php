@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
     <title>Belajar Controller & View pada Laravel</title>
-    <p>Testing</p>
     @vite('resources/sass/app.scss')
 </head>
 
