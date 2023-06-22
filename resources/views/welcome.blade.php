@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
-    <title>Belajar Controller & View pada Laravel</title>
+    <title>Belajar Version Control</title>
     @vite('resources/sass/app.scss')
 </head>
 
 <body>
     <div class="container text-center my-5">
-        <h1 class="mb-4">Belajar Controller & View pada Laravel</h1>
+        <h1 class="mb-4">Belajar Version Control</h1>
         <img class="img-thumbnail w-50" src="{{ Vite::asset('public/assets/laravel.png') }}" alt="image">
         <div class="col-md-2 offset-md-5 mt-4">
             <div class="d-grid gap-2">
