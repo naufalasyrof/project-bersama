@@ -1,8 +1,15 @@
-<div class="container mt-4">
-    <h4>{{ $pageTitle }}</h4>
-    <hr>
-    <div class="d-flex align-items-center py-2 px-4 bg-light rounded-3 border">
-        <div class="bi-house-fill me-3 fs-1"></div>
-        <h4 class="mb-0">Well done! this is {{ $pageTitle }}.</h4>
+{{-- Ini Untuk Action --}}
+<div class="d-flex">
+    <a href="{{ route('employees.show', ['employee' => $employee->id]) }}" class="btn btn-outline-dark btn-sm me-2"><i
+            class="bi-person-lines-fill"></i></a>
+    <a href="{{ route('employees.edit', ['employee' => $employee->id]) }}" class="btn btn-outline-dark btn-sm me-2"><i
+            class="bi-pencil-square"></i></a>
+    <div>
+        <form action="{{ route('employees.destroy', ['employee' => $employee->id]) }}" method="POST">
+            @csrf
+            @method('delete')
+            <button type="submit" class="btn btn-outline-dark btn-sm me-2"><i class="bi-trash"></i></button>
+        </form>
     </div>
 </div>
+
