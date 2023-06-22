@@ -33,7 +33,10 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-
+        $pageTitle = 'Create Employee';
+        // ELOQUENT
+        $positions = Position::all();
+        return view('employees.create', compact('pageTitle', 'positions'));
     }
 
     /**
